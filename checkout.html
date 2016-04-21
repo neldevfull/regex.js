@@ -56,7 +56,7 @@
 			        <button type="submit" class="btn btn-default">Buscar</button>
 		      	</form>
 			</div>
-			
+
 	</nav>
 </header>
 <main>
@@ -69,7 +69,7 @@
 					</div><!-- fim .panel-heading -->
 					<div class="panel-body">
 						<figure>
-								<img src="img/produto.png" alt="Fuzzy Cardigan" 
+								<img src="img/produto.png" alt="Fuzzy Cardigan"
 							 class="img-thumbnail img-responsive">
 					 	</figure>
 						<dl>
@@ -108,7 +108,8 @@
 
 				<div class="form-group">
 					<label for="cpf">CPF</label>
-					<input type="text" class="form-control" id="cpf" name="cpf">
+					<input type="text" class="form-control" id="cpf" name="cpf"
+						required pattern="\d\d\d\d\d\d\d\d\d\d\d">
 				</div>
 				<div class="form-group">
 					<label for="telefone">Telefone</label>
@@ -126,7 +127,8 @@
 				<legend>Informações de entrega</legend>
 				<div class="form-group">
 					<label for="CEP">CEP</label>
-					<input type="text" class="form-control" id="cep" name="cep">
+					<input type="text" class="form-control" id="cep" name="cep"
+						required pattern="\d{4}-?\d{3}">
 				</div>
 				<div class="form-group">
 					<label for="endereco">Endereço</label>
@@ -179,19 +181,19 @@
 
 				<div class="form-group">
 					<label for="numero-cartao">Número</label>
-					<input type="text" class="form-control" 
+					<input type="text" class="form-control"
 					       id="numero-cartao" name="numero-cartao">
 				</div>
 
 				<div class="form-group">
 					<label for="validade-cartao">Validade</label>
-					<input type="text" class="form-control" 
+					<input type="text" class="form-control"
 					       id="validade-cartao" name="validade-cartao">
 				</div>
 
 				<div class="form-group">
 					<label for="cvv-cartao">CVV</label>
-					<input type="text" maxlength="3" class="form-control" 
+					<input type="text" maxlength="3" class="form-control"
 					       id="cvv-cartao" name="cvv-cartao">
 				</div>
 			</fieldset>
@@ -199,7 +201,7 @@
 				<span class="glyphicon glyphicon-thumbs-up"></span>
 				Confirmar Pedido
 			</button>
-		</form>		
+		</form>
 		</div><!-- fim row -->
 	</div><!-- container -->
 </main>
